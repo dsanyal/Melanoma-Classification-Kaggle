@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>Melanoma prediction in lesion images</title>
+
+{% block body %}
+{% if error_code==1 %}
+  <h4> <strong>ERROR: </strong> File not found!</h4>
+  <a href="{{ url_for('upload_image') }}">Click here to go back</a>
+{% endif %}
+
+{% if error_code==2 %}
+  <h4> <strong>ERROR: </strong>No selected file! </h4>
+  <a href="{{ url_for('upload_image') }}">Click here to go back</a>
+{% endif %}
+
+{% if error_code==3 %}
+  <h4> <strong>ERROR: </strong>Please upload a jpg or a jpeg image only! </h4>
+  <a href="{{ url_for('upload_image') }}">Click here to go back</a>
+{% endif %}
+{% endblock %}
+
+
+</html>
