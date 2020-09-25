@@ -120,7 +120,7 @@ if __name__ == '__main__':
     with open('models/model.json', 'r') as json_file:
         loaded_model_json = json_file.read()
     model = tf.keras.models.model_from_json(loaded_model_json)
-    model.load_weights('models/fold3.h5')
+    model.load_weights('models/model.h5')
     app.run(host = "0.0.0.0",debug=True)
 
 
