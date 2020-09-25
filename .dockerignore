@@ -18,4 +18,3 @@ pip-log.txt
 *.egg/
 
 siim-tf2-augmentation-with-tfa-effnets.ipynb
-static/uploads
