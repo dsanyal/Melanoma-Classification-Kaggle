@@ -1,7 +1,7 @@
 {
     "AWSEBDockerrunVersion": "1",
     "Image": {
-      "Name": "dsanyal/melanoma-flaskapp:latest",
+      "Name": "dsanyal/melanoma-flaskapp",
       "Update": "true"
     },
     "Ports": [
